@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<body>
+    <fieldset>
+        <legend>Ficha de la película</legend>
+        <form action="">
+            <label>Título</label>
+            <input type="text" name="title" placeholder="Name">
+            <br>
+            <label>Director</label>
+            <input type="text" name="director">
+            <br>
+            <label>Fecha de estreno:</label>
+            <input type="date" name="releaseDate">
+            <br>
+            <label">Póster:</label>
+            <input type="file" name="file" value="Seleccionar archivo">
+            <br>
+            <label">Versión:</label>
+            <br>
+            <input type="checkbox" name="imax">
+            <label>IMAX</label>
+            <input type="checkbox" name="3d">
+            <label>3D</label>
+            <input type="checkbox" name="fullhd">
+            <label>Full HD</label>
+            <br>
+            <label>Clasificación:</label>
+            <br>
+            <input type="radio" name="class">
+            <label>TP</label>
+            <input type="radio" name="class">
+            <label>+12</label>
+            <input type="radio" name="class">
+            <label>+15</label>
+            <input type="radio" name="class">
+            <label>+18</label>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Ficha de proyección</legend>
+        <form action="">
+            <label>Sala:</label>
+            <select name="room">
+                <option value="cine de barrio">Cine de barrio</option>
+                <option value="Cines Yelmo">Cines Yelmo</option>
+                <option value="Cinesa">Cinesa</option>
+                <option value="Cines Full HD">Cines Full HD</option>
+            </select>
+            <br>
+            <textarea name="description" cols="50" rows="5" placeholder="Escribe una breve sinopsis"></textarea>
+            <br>
+            <select name="language">
+                <option value="english">Inglés</option>
+                <option value="spanish">Español</option>
+            </select>
+            <br>
+            <label>Sesión</label>
+            <input type="time" name="time">
+            <br>
+            <label>Días de proyeccion:</label>
+            <br>
+            <select name="day" size="4">
+                <option value="moday">Lunes</option>
+                <option value="tuesday">Martes</option>
+                <option value="wednesday">Miércoles</option>
+                <option value="thursday">Jueves</option>
+                <option value="friday">Friday</option>
+            </select>
+            <br>
+            <label>Elige un color de fondo:</label>
+            <input type="color" name="background">
+            <br>
+            <label>Puntuación del público</label>
+            <progress value="57" max="100"></progress>
+        </form>
+    </fieldset>
+</body>
